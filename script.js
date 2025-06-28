@@ -1,11 +1,13 @@
-if (false)
-    console.log("hello")
-else {
-    console.log("hi")
-    console.log("man")
-}
-// If the condition has only one line sentance we do not have to use curly brackets
+const value = 4
 
-const cond = 2 < 3 ? "Okay cool" : "Not cool"
-console.log(cond)
-// Turner condition (inline condition)
+switch (value) {
+    case 3:
+        console.log("3 is cool")
+        break;
+    case 4:
+        console.log("4 is not cool")
+        break;
+    default:
+        console.log("okay")
+        break;
+}
