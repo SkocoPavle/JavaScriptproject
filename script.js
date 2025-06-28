@@ -1,9 +1,3 @@
-const v = 64
-
-console.log(`V = ${v}`)
-console.error("error")
-console.warn("warning")
-
-//single line comment
-/* multiple linee 
-comment */
+const prompt = require("prompt-sync")()
+const v = prompt("What is your name ")
+console.log(`Hello ${v}`);
