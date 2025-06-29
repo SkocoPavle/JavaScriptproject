@@ -1,11 +1,17 @@
-const [x, ...y] = [1, 2, 3, 4]
-console.log(x, y)
+const arr = [1, 2, 3]
 
-const p = [1, 2, 3, 4]
-const k = p
-k.push("hello")
-console.log(p, k)
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+}
 
-const c = [...p]
-c.push("hello")
-console.log(p, c)
+const arr2 = [4, 5, 6]
+
+for (let value of arr2) {
+    console.log(value)
+}
+
+const arr3 = [1, 2, 3, 4]
+
+for (let [i, value] of arr3.entries()) {
+    console.log(i, value)
+}
