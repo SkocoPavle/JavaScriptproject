@@ -7,3 +7,5 @@ catch (error) {
 finally {
     console.log("Clenup code can go here")
 }
+
+throw new Error("This is not good")
