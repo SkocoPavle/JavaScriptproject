@@ -1,17 +1,37 @@
-const arr = [1, 2, 3]
-
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i])
+const obj = {
+    name: "Alice",
+    age: 23,
+    sayHello: function() {
+        return "Hello"
+    },
+    career: {
+        
+    }
 }
 
-const arr2 = [4, 5, 6]
+obj.age = "tim"
+obj.newProp = [1, 2]
+obj["name"] = "Jelena"
+delete obj.age
 
-for (let value of arr2) {
-    console.log(value)
+console.log(Object.values(obj))
+console.log(Object.keys(obj))
+
+for (let key in obj) {
+    console.log(key)
 }
 
-const arr3 = [1, 2, 3, 4]
 
-for (let [i, value] of arr3.entries()) {
-    console.log(i, value)
+const obj2 = {
+    hairColor: "black",
+    arr: [1, 2, 3],
 }
+
+const obj3 = {...obj, ...obj2}
+console.log(obj3)
+
+obj3.career.info = "tech"
+console.log(obj, obj3)
+
+const {hairColor, name} = obj3
+console.log(hairColor, name)
