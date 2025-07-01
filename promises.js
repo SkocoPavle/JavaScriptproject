@@ -24,5 +24,5 @@ Promise.all([promise1, promise2, promise3])
         console.log(result)
     })
     .catch((error) => {
-        console.log(error)
+        console.log(errorr)
     })
